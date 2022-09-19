@@ -1,7 +1,9 @@
 # SkyNX
 Stream your PC games to your Nintendo Switch without Android! Now on the Homebrew App Store!
 
-[Downloads are here](https://github.com/DevL0rd/SkyNX/releases).
+[Fork downloads are here](https://github.com/Im-0xC7/SkyNX/releases).
+
+[Original downloads are here](https://github.com/DevL0rd/SkyNX/releases).
 
 Also, if you can help, I'm currently looking for a job. If you have any leads, let me know at SkyNxApp@gmail.com.
 
