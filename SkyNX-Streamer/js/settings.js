@@ -48,7 +48,7 @@ function initSettings() {
         clientSettings.limitFPS = false;
     }
     if (!clientSettings.hasOwnProperty("autoChangeResolution")) {
-        clientSettings.autoChangeResolution = true;
+        clientSettings.autoChangeResolution = false;
     }
     if (!clientSettings.hasOwnProperty("encoding")) {
         clientSettings.encoding = "CPU";
