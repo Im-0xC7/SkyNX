@@ -34,7 +34,7 @@
       <button id="console-btn" class="navBar-btns" data-toggle="tooltip" data-placement="right" data-html="true"
         title="Console"><i class="fas fa-terminal"></i></button>
     </div>
-    <div id="main" class="contentArea">
+    <div id="main" class="contentArea contentAreaScrollable customScroll">
       <div class="row">
         <div class="col-7">
           <div class="form-group">
@@ -46,6 +46,12 @@
             <input id="qualitySlider" type="range"
               title="Higher settings increase quality at the cost of latency. Over 10 is probably overkill."
               class="custom-range" min="4" max="20" value="5" />
+          </div>
+          <div class="form-group">
+            <label id="monitorLabel" for="monitorSlider">Monitor: 0</label>
+            <input id="monitorSlider" type="range"
+              title="Set which monitor is streamed to the SkyNX client"
+              class="custom-range" min="0" max="0" value="0" />
           </div>
           <div class="form-group">
             <div class="dropdown">

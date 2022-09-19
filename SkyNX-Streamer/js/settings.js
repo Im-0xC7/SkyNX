@@ -62,6 +62,9 @@ function initSettings() {
     if (!clientSettings.hasOwnProperty("autoStartup")) {
         clientSettings.autoStartup = false;
     }
+    if (!clientSettings.hasOwnProperty("monitor")) {
+        clientSettings.monitor = 0;
+    }
 
     applyClientSettings();
 }
@@ -185,6 +188,17 @@ $(document).on('input', '#qualitySlider', function () {
     if (running) {
         clearTimeout(qualityChangeTimeout);
         qualityChangeTimeout = setTimeout(restart, 1000)
+    }
+    saveClientSettings();
+});
+
+var monitorChangeTimeout;
+$(document).on('input', '#monitorSlider', function () {
+    $('#monitorLabel').html("Monitor: " + $(this).val());
+    clientSettings.monitor = $(this).val();
+    if (running) {
+        clearTimeout(monitorChangeTimeout);
+        monitorChangeTimeout = setTimeout(restart, 1000)
     }
     saveClientSettings();
 });
